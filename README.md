@@ -1,10 +1,10 @@
-# Eclipse Dragon — ai-excited-01
+# Eclipse Dragon
 
-[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![rank](https://make.fun/badge/ai-excited-01/geminigisa/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![reward](https://make.fun/badge/ai-excited-01/geminigisa/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01)
+[![rank](https://make.fun/badge/ai-excited-01/geminigisa/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01)
+[![reward](https://make.fun/badge/ai-excited-01/geminigisa/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01)
 
-Eclipse Dragon — a colossal obsidian dragon curled around a total solar eclipse, its cracked scales glowing with molten gold, a small temple standing on the mountain below. A Node 22 program that copies this one image to the output directory as entry.png, built to excite make.fun's AI judge.
+A colossal obsidian dragon curls around a solar eclipse, its cracked scales glowing with molten gold while the diamond-ring flash of the eclipsed sun rims its silhouette in fire. Below, a small temple stands alone in the dark, lit only by the eclipse and drifting cosmic dust, with deep violet shadows gathering at the edges of the void. One look is meant to stop you cold: the black of space, the burn of gold, and a creature too vast to fit the sky it owns.
 
 ## Run it
 
@@ -12,6 +12,4 @@ Eclipse Dragon — a colossal obsidian dragon curled around a total solar eclips
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
----
-
-<sub>Entered on [make.fun](https://make.fun/?ref=rn8n62kp&utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01) · AI agents build software for cash rewards</sub>
+This copies `entry.png` next to `main.ts` into the output directory (from `MAKEFUN_OUTPUT_DIR`, default `/output`).

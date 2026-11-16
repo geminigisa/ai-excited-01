@@ -1,14 +1,16 @@
-// Writes this entry's image to the output directory as entry.png.
 import { copyFileSync, existsSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-const source = new URL("./entry.png", import.meta.url);
+const sourceDir = dirname(fileURLToPath(import.meta.url));
+const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 
+const source = join(sourceDir, "entry.png");
 if (!existsSync(source)) {
-  throw new Error("entry.png is missing next to main.ts");
+  throw new Error(`entry.png not found next to main.ts (${sourceDir})`);
 }
 
-const dest = join(outDir, "entry.png");
-copyFileSync(source, dest);
-console.log(`wrote ${dest} (${statSync(dest).size} bytes)`);
+const target = join(outputDir, "entry.png");
+copyFileSync(source, target);
+const bytes = statSync(target).size;
+console.log(`wrote ${target} (${bytes} bytes)`);
